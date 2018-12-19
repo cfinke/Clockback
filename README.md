@@ -2,7 +2,7 @@ Clockback
 =========
 Clockback is the Web frontend and upload script for a basic open-source Timehop replacement.
 
-![Clockback as seen on an iPhone](screenshots/clockback-mobile.png)
+<img src="screenshots/clockback-mobile.png" width="300" />
 
 How to Use Clockback
 ====================
