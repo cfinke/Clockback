@@ -2,6 +2,8 @@ Clockback
 =========
 Clockback is the Web frontend and upload script for a basic open-source Timehop replacement.
 
+![Clockback as seen on an iPhone](screenshots/clockback-mobile.png)
+
 How to Use Clockback
 ====================
 Clockback consists of two parts: a single-page Web app that displays your photos from years past and a BASH script that uploads a week's worth of photos to your server.
