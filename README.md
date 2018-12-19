@@ -25,3 +25,7 @@ To use Clockback:
 
 1. Open `example.com/clockback/` and save it to your homescreen on your phone (or bookmark it on your computer).
 1. The end.  Now you have an app that behaves like Timehop but for all of your photos, and without sharing your photos with a third party.  At midnight every night, it will begin showing photos from the next day, as long as you've run `bin/upload.sh` in the last week, and it will automatically remove old photos so they don't take up space on your server.
+
+Attributions
+============
+The icon was designed by [icon 54](https://thenounproject.com/term/recent-history/1939718/)
