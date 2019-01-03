@@ -48,7 +48,7 @@ for i in `seq 0 6`;
 do
 	DATE=$(TZ="$timezone" date -v+${i}d '+%m-%d' )
 
-	for photo_dir in $photo_dirs;
+	for photo_dir in ${photo_dirs[@]};
 	do
 		for f in `find "$photo_dir" -name "*" -type f | grep "/....-$DATE *" | grep -v /thumbnails/`;
 		do
