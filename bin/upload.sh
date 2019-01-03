@@ -59,10 +59,12 @@ done
 
 for f in `find "$temp_dir" -type f`;
 do
-	sips -Z 500 "$f" --out "$temp_dir/.resizing" > /dev/null 2> /dev/null
+	sips -Z 500 "$f" --out "$temp_dir/.resizing"
 	mv "$temp_dir/.resizing" "$f"
 done
 
 chmod -R 0755 "$temp_dir"
-rsync -avz --delete "$temp_dir/" "$upload_path" > /dev/null
+rsync -avz --delete "$temp_dir/" "$upload_path"
 rm -rf "$temp_dir"
+
+exit 0
