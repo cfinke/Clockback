@@ -37,6 +37,12 @@ date_default_timezone_set( CLOCKBACK_TIMEZONE );
 				display: inline-block;
 				padding: .5rem 2rem;
 				color: #fff;
+				position: -webkit-sticky;
+				position: -moz-sticky;
+				position: -ms-sticky;
+				position: -o-sticky;
+				position: sticky;
+				top: 10px;
 			}
 
 			h2:nth-of-type(6n-5) {
@@ -69,14 +75,13 @@ date_default_timezone_set( CLOCKBACK_TIMEZONE );
 
 			img {
 				box-sizing: border-box;
-
 				width: 100%;
 				padding: 10px 0px;
 				display: block;
 				border: 1px solid #ddd;
 				border-width: 0 0 1px 0;
 			}
-			
+
 			@media (min-width: 1000px) {
 				body {
 					width: 500px;
