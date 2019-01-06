@@ -94,6 +94,8 @@ date_default_timezone_set( CLOCKBACK_TIMEZONE );
 			$photos = glob( "photos/*.*" );
 			$photos = array_reverse( $photos );
 
+			$photos_found = 0;
+
 			$years_ago = 0;
 		
 			$this_year = date( "Y" );
@@ -113,6 +115,12 @@ date_default_timezone_set( CLOCKBACK_TIMEZONE );
 				}
 
 				echo '<img src="' . $photo . '" alt="' . htmlspecialchars( $photo ) . '" title="' . htmlspecialchars( $photo ) . '" />';
+
+				$photos_found++;
+			}
+
+			if ( ! $photos_found ) {
+				echo '<h2>This Memory Bank is Empty</h2>';
 			}
 
 			?>
