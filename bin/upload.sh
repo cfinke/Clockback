@@ -59,8 +59,7 @@ done
 
 for f in `find "$temp_dir" -type f`;
 do
-	sips -Z 500 "$f" --out "$temp_dir/.resizing"
-	mv "$temp_dir/.resizing" "$f"
+	sips -Z 500 "$f" --out "$temp_dir/.resizing.jpg" && mv "$temp_dir/.resizing.jpg" "$f"
 done
 
 chmod -R 0755 "$temp_dir"
